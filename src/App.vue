@@ -1,29 +1,21 @@
+<!-- src/App.vue -->
 <template>
-<TheHeader/>
-<TheNavigation/>
-<TheContent/>
-<TheFooter/>
-<TheHistory/>
+  <div id="app">
+    <NavigationBar />
+    <router-view />
+  </div>
 </template>
 
 <script>
-import TheHeader from '@/components/TheHeader.vue';
-import TheNavigation from '@/components/TheNavigation.vue';
-import TheContent from '@/components/TheContent.vue';
-import TheFooter from '@/components/TheFooter.vue';
-import TheHistory from '@/components/TheHistory.vue';
+import NavigationBar from './components/NavigationBar.vue';
 
 export default {
+  name: 'App',
   components: {
-    TheHeader,
-    TheNavigation,
-    TheContent,
-    TheFooter,
-    TheHistory
+    NavigationBar
   }
-};
+}
 </script>
-
 
 <style>
 #app {
@@ -34,4 +26,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-</style>
+</style> 
