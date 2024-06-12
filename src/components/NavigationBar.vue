@@ -1,9 +1,11 @@
 <template>
     <nav>
       <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/tables">Tables</router-link></li>
-        <li><router-link to="/transfers">Transfers</router-link></li>
+        <li><router-link to="/">HOME</router-link></li>
+        <li><router-link to="/tables">KLUBOVI</router-link></li>
+        <li><router-link to="/transfers">TRANSFERI</router-link></li>
+        <li><router-link to="/prizes">NAGRADE</router-link></li>
+        <li><router-link to="/stadiums">STADIONI</router-link></li>
       </ul>
     </nav>
   </template>

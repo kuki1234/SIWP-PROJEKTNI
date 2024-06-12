@@ -6,7 +6,7 @@
     <title>Premier League</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
 <body>
     <header>
         <img src="../assets/premier league logo (1).png" class="logo" alt="Premier League Logo">
@@ -15,22 +15,6 @@
 
 
 
-        <!-- Added a class for the main content to apply the top margin -->
-        <div class="container main-content">
-        <div class="text">
-            <h1 style="color: black;">TRANSFERNO VRIJEME</h1>
-            <p style="font-size: 22px;">Ljetni prijelazni rok: obično traje od 10. lipnja do 31. kolovoza. Ovo je glavno razdoblje za klubove da ojačaju svoje momčadi za nadolazeću sezonu.
-
-<br>Zimski prijelazni rok: Otvara se 1. siječnja i zatvara 31. siječnja. Ovaj rok omogućuje klubovima da naprave prilagodbe svojih momčadi usred sezone.</p>
-        </div>
-        <div class="image">
-            <img src="../assets/GettyImages-1452953852.jpg" alt="Description of the image">
-        </div>
-    </div>
-
-
-
-
 
 
     
@@ -38,16 +22,33 @@
     <!-- Added a class for the main content to apply the top margin -->
     <div class="container main-content">
         <div class="text">
-            <h1 style="color: black;">TOP NAJSKUPLJIH TRANSFERA</h1>
-            <p style="font-size: 22px;">Transfer argentinskog veznjaka Enza Fernandeza početkom ove godine iz Benfice u Chelsea za 120 milijuna eura rekordan je transfer u Premier ligi. Vrlo blizu je i transfer Jacka Grealisha iz Aston Ville u Manchester City za 117 milijuna eura, te Romelua Lukakua iz Intera u Chelsea za 115 milijuna eura, te Edena Hazarda iz Chelsea u Real Madrid za istu cijenu od 115 milijuna eura.</p>
+            <h1 style="color: black;">ANFIELD</h1>
+            <p style="font-size: 22px;">Anfield je nogometni stadion koji se nalazi u Liverpoolu, Engleska. Na njemu domaće utakmice igra nogometni klub Liverpool. Kapacitet stadiona je 53,394 sjedecih mjesta.
+
+ Stadion se sastoji od četiri tribine: Spion Kop, Main Stand, Centenary Stand i Anfield Road. </p>
         </div>
         <div class="image">
-            <img src="../assets/328599849_1877763455906013_845042424858831073_n.jpg" alt="Description of the image">
+            <img src="../assets/Anfield_stadium_(Liverpool)_panorama_view_from_main_stand.jpg" alt="Description of the image">
         </div>
     </div>
 
 
 
+    
+
+
+
+
+    <!-- Added a class for the main content to apply the top margin -->
+    <div class="container main-content">
+        <div class="text">
+            <h1 style="color: black;">EMIRATES</h1>
+            <p style="font-size: 22px;">Emirates Stadium je moderan dom Arsenala, smješten u sjevernom Londonu. Stadion je poznat po svojoj impresivnoj arhitekturi i vrhunskim sadržajima. Otvoren 2006. godine, zamijenio je legendarni Highbury kao Arsenalov dom. Emirates pruža odlične uvjete za gledatelje i nudi sjajan pogled na teren sa svakog sjedala.</p>
+        </div>
+        <div class="image">
+            <img src="../assets/emirates.jpg" alt="Description of the image">
+        </div>
+    </div>
 
 
 
@@ -61,17 +62,13 @@
     <!-- Added a class for the main content to apply the top margin -->
     <div class="container main-content">
         <div class="text">
-            <h1 style="color: black;">NAJVEĆI POTROŠAČI TRANSFERA MEĐU KLUBOVIMA</h1>
-            <p style="font-size: 22px;">1) Chelsea: £-672.95m<br>
-                2) Manchester United: £-594.92m<br>3) Arsenal: £-550.53m<br>4) Tottenham: £-459.4m<br>5) Newcastle: £-414.7m<br>6) Manchester City: £-326.67m
-            </p>
+            <h1 style="color: black;">OLD TRAFFORD</h1>
+            <p style="font-size: 22px;">Old Trafford je stadion u Manchesteru na kojem igra nogometni klub Manchester United. Sa 76.000 sjedećih mjesta, drugi je najveći engleski stadion, nakon Wembleya. Nadimak stadiona je Kazalište snova, kako ga je prozvao legendarni igrač Uniteda, Sir Bobby Charlton.</p>
         </div>
         <div class="image">
-            <img src="../assets/transferi.jpg" alt="Description of the image">
+            <img src="../assets/1200px-Stretford_End,_Old_Trafford.jpg" alt="Description of the image">
         </div>
     </div>
-    
-
 
 
 
@@ -161,20 +158,27 @@
 
 <script>
 export default {
-  name: 'PlayerTransfers'
+  name: 'TheStadiums'
 }
 </script>
 
-<style scoped>
+<style>
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
+h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 50px; /* Adjust this to vertically center the text in the header */
+}
+
 header {
     background-color: #37003c;
-    padding: 200 25px;
+    padding: 0 25px; /* Horizontal padding only */
     height: 85px;
     width: 100%;
     position: fixed;
@@ -182,21 +186,14 @@ header {
     left: 0;
     z-index: 1000;
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically centers the content in the header */
     justify-content: center;
-}
-
-header h1 {
-    color: white;
-    margin: 0;
-    padding: 0;
-    line-height: 50px;
 }
 
 nav {
     background-color: #3d5a80;
     width: 100%;
-    margin-top: 85px;
+    margin-top: 85px; /* Push nav down to avoid overlap with fixed header */
 }
 
 nav ul {
@@ -235,7 +232,7 @@ nav ul li a:hover {
     display: flex;
     border: 2px solid #000;
     padding: 10px;
-    max-width: 600px;
+    max-width: 900px; /* Increased the max-width */
     margin: 40px auto 0;
 }
 
@@ -258,52 +255,30 @@ nav ul li a:hover {
     border: 1px solid #000;
 }
 
-
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    max-width: 950px;
-    margin: auto;
-    padding: 20px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .footer {
     background-color: #37003c;
-    padding: 30px 20px;
+    padding: 30px 20px; /* Reduced padding to reduce blank space */
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Increased the max-width */
+    margin: auto;
 }
 
 .footer-col {
-    flex: 1;
-    min-width: 200px;
+    flex: 1 1 16%; /* Adjusted flex basis to fit 6 columns */
     padding: 0 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Added margin-bottom for spacing */
 }
 
 .footer-col h4 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Reduced margin-bottom */
     font-weight: 500;
     position: relative;
 }
@@ -317,12 +292,6 @@ ul {
     height: 2px;
     box-sizing: border-box;
     width: 50px;
-}
-
-.footer-col ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -364,29 +333,25 @@ ul {
 
 @media(max-width: 767px) {
     .footer-col {
-        width: 50%;
+        flex: 1 1 50%;
         margin-bottom: 30px;
     }
 }
 
 @media(max-width: 574px) {
     .footer-col {
-        width: 100%;
+        flex: 1 1 100%;
     }
 }
 
+/* Added margin to create space between the navigation and the content */
 .main-content {
     margin-top: 75px;
 }
 
+/* Added margin to create space between the content and the footer */
 .container {
     margin-bottom: 75px;
 }
 
-body, html {
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
 </style>
